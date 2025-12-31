@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - JobPortal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">JobPortal</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="tutorials.html">Learning</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <h1>Welcome back, Alexandra!</h1>
+            <p>Track your job search progress and continue learning</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="section">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Profile Strength -->
+                <div class="dashboard-card highlight">
+                    <div class="card-header">
+                        <h3>Profile Strength</h3>
+                        <span class="card-badge">Excellent</span>
+                    </div>
+                    <div class="profile-strength">
+                        <div class="strength-circle">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                <path class="circle" stroke-dasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                <text x="18" y="20.35" class="percentage">85%</text>
+                            </svg>
+                        </div>
+                        <p class="strength-tip">Complete certifications section to reach 100%</p>
+                    </div>
+                </div>
+
+                <!-- Upload CV -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Your Resume</h3>
+                    </div>
+                    <div class="upload-area">
+                        <div class="upload-icon">📄</div>
+                        <p class="upload-filename">resume_alexandra_martinez.pdf</p>
+                        <p class="upload-date">Last updated: Dec 15, 2024</p>
+                        <button class="btn btn-secondary btn-sm" id="updateResumeBtn">Update Resume</button>
+                    </div>
+                </div>
+
+                <!-- Rating -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Candidate Rating</h3>
+                        <span class="rating-stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="rating-content">
+                        <div class="rating-score">4.8 / 5.0</div>
+                        <p class="rating-reviews">Based on 24 reviews</p>
+                        <div class="rating-breakdown">
+                            <div class="rating-bar-item">
+                                <span>Skills</span>
+                                <div class="mini-bar"><div style="width: 92%"></div></div>
+                            </div>
+                            <div class="rating-bar-item">
+                                <span>Experience</span>
+                                <div class="mini-bar"><div style="width: 88%"></div></div>
+                            </div>
+                            <div class="rating-bar-item">
+                                <span>Communication</span>
+                                <div class="mini-bar"><div style="width: 95%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Application Statistics</h3>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-number">23</div>
+                            <div class="stat-label">Applications</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Interviews</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">1,247</div>
+                            <div class="stat-label">Profile Views</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">Saved Jobs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courses -->
+                <div class="dashboard-card wide">
+                    <div class="card-header">
+                        <h3>Courses in Progress</h3>
+                        <a href="tutorials.html" class="card-link">View All</a>
+                    </div>
+                    <div class="courses-list">
+                        <div class="course-item">
+                            <div class="course-info">
+                                <h4>Advanced React Patterns</h4>
+                                <p>Master complex React concepts</p>
+                            </div>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <span class="progress-text">65%</span>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-info">
+                                <h4>System Design Fundamentals</h4>
+                                <p>Learn to design scalable systems</p>
+                            </div>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 40%"></div>
+                                </div>
+                                <span class="progress-text">40%</span>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-info">
+                                <h4>TypeScript Deep Dive</h4>
+                                <p>Advanced TypeScript techniques</p>
+                            </div>
+                            <div class="course-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="progress-text">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mock Interviews -->
+                <div class="dashboard-card wide">
+                    <div class="card-header">
+                        <h3>Mock Interviews</h3>
+                        <a href="tutorials.html" class="card-link">Schedule New</a>
+                    </div>
+                    <div class="interviews-summary">
+                        <div class="interview-stat">
+                            <div class="stat-icon completed">✓</div>
+                            <div>
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Completed</div>
+                            </div>
+                        </div>
+                        <div class="interview-stat">
+                            <div class="stat-icon upcoming">📅</div>
+                            <div>
+                                <div class="stat-number">2</div>
+                                <div class="stat-label">Upcoming</div>
+                            </div>
+                        </div>
+                        <div class="interview-stat">
+                            <div class="stat-icon score">⭐</div>
+                            <div>
+                                <div class="stat-number">4.5</div>
+                                <div class="stat-label">Avg Score</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upcoming-interview">
+                        <p><strong>Next Interview:</strong> Frontend Technical Interview</p>
+                        <p>📅 Dec 28, 2024 at 2:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="dashboard-card wide">
+                    <div class="card-header">
+                        <h3>Recent Testimonials</h3>
+                    </div>
+                    <div class="testimonials-list">
+                        <div class="testimonial-item">
+                            <div class="testimonial-author">
+                                <div class="author-avatar">JD</div>
+                                <div>
+                                    <strong>John Davis</strong>
+                                    <span>Engineering Manager, TechCorp</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                            <p>"Alexandra is an exceptional developer with great attention to detail and strong problem-solving skills."</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SK</div>
+                                <div>
+                                    <strong>Sarah Kim</strong>
+                                    <span>Product Designer, StartupLabs</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                            <p>"Pleasure to work with. Always delivers high-quality code and collaborates effectively with the team."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hiring Companies -->
+                <div class="dashboard-card wide">
+                    <div class="card-header">
+                        <h3>Companies Interested in You</h3>
+                    </div>
+                    <div class="companies-list">
+                        <div class="company-card">
+                            <div class="company-logo-big">T</div>
+                            <h4>TechVision Inc.</h4>
+                            <div class="company-rating">
+                                <span class="rating-stars">⭐ 4.5</span>
+                                <span class="reviews">(234 reviews)</span>
+                            </div>
+                            <p class="company-industry">Enterprise Software</p>
+                            <button class="btn btn-secondary btn-sm">View Profile</button>
+                        </div>
+                        <div class="company-card">
+                            <div class="company-logo-big">I</div>
+                            <h4>InnovateLabs</h4>
+                            <div class="company-rating">
+                                <span class="rating-stars">⭐ 4.7</span>
+                                <span class="reviews">(189 reviews)</span>
+                            </div>
+                            <p class="company-industry">AI & Machine Learning</p>
+                            <button class="btn btn-secondary btn-sm">View Profile</button>
+                        </div>
+                        <div class="company-card">
+                            <div class="company-logo-big">C</div>
+                            <h4>CloudFirst</h4>
+                            <div class="company-rating">
+                                <span class="rating-stars">⭐ 4.3</span>
+                                <span class="reviews">(156 reviews)</span>
+                            </div>
+                            <p class="company-industry">Cloud Infrastructure</p>
+                            <button class="btn btn-secondary btn-sm">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Candidates -->
+                <div class="dashboard-card wide">
+                    <div class="card-header">
+                        <h3>Similar Candidates</h3>
+                        <a href="#" class="card-link">View More</a>
+                    </div>
+                    <div class="candidates-list">
+                        <div class="candidate-item">
+                            <div class="candidate-avatar">MJ</div>
+                            <div class="candidate-info">
+                                <h4>Michael Johnson</h4>
+                                <p>Full Stack Developer</p>
+                                <div class="candidate-skills">
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">AWS</span>
+                                </div>
+                            </div>
+                            <div class="candidate-rating">⭐ 4.6</div>
+                        </div>
+                        <div class="candidate-item">
+                            <div class="candidate-avatar">EP</div>
+                            <div class="candidate-info">
+                                <h4>Emily Parker</h4>
+                                <p>Frontend Engineer</p>
+                                <div class="candidate-skills">
+                                    <span class="skill-tag">Vue.js</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                    <span class="skill-tag">CSS</span>
+                                </div>
+                            </div>
+                            <div class="candidate-rating">⭐ 4.7</div>
+                        </div>
+                        <div class="candidate-item">
+                            <div class="candidate-avatar">DL</div>
+                            <div class="candidate-info">
+                                <h4>David Lee</h4>
+                                <p>JavaScript Developer</p>
+                                <div class="candidate-skills">
+                                    <span class="skill-tag">Angular</span>
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">GraphQL</span>
+                                </div>
+                            </div>
+                            <div class="candidate-rating">⭐ 4.5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JobPortal</h3>
+                    <p>Your career journey starts here</p>
+                </div>
+                <div class="footer-section">
+                    <h4>For Candidates</h4>
+                    <ul>
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Career Advice</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JobPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/dashboard.js"></script>
+    <input type="file" id="dashboardResumeInput" accept=".pdf,.doc,.docx" style="display: none;">
+</body>
+</html>

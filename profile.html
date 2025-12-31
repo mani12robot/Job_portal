@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Profile - JobPortal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">JobPortal</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="tutorials.html">Learning</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Header -->
+    <section class="profile-header">
+        <div class="container">
+            <div class="profile-banner">
+                <div class="profile-main">
+                    <div class="profile-photo">
+                        <img src="/placeholder.svg?height=120&width=120" alt="Profile">
+                    </div>
+                    <div class="profile-info">
+                        <h1>Alexandra Martinez</h1>
+                        <p class="designation">Senior Frontend Developer</p>
+                        <div class="profile-meta">
+                            <span class="rating">⭐ 4.8</span>
+                            <span class="location">📍 San Francisco, CA</span>
+                            <span class="experience">💼 8 years experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <a href="index_1_R.html" class="btn btn-secondary">
+  Check Resume ATS SCORE
+</a>
+
+                    <button class="btn btn-accent" id="editProfileBtn">Edit Profile</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="section">
+        <div class="container">
+            <div class="profile-layout">
+                <!-- Main Content -->
+                <div class="profile-main-content">
+                    <!-- Skills Section -->
+                    <div class="profile-card">
+                        <h2 class="card-title">Technical Skills</h2>
+                        <div class="skills-showcase">
+                            <div class="skills-list-grid">
+                                <div class="skill-badge-item">React.js <span class="skill-level-text">Expert</span></div>
+                                <div class="skill-badge-item">JavaScript <span class="skill-level-text">Expert</span></div>
+                                <div class="skill-badge-item">TypeScript <span class="skill-level-text">Expert</span></div>
+                                <div class="skill-badge-item">CSS/SASS <span class="skill-level-text">Advanced</span></div>
+                                <div class="skill-badge-item">HTML5 <span class="skill-level-text">Expert</span></div>
+                                <div class="skill-badge-item">Node.js <span class="skill-level-text">Advanced</span></div>
+                                <div class="skill-badge-item">Vue.js <span class="skill-level-text">Intermediate</span></div>
+                                <div class="skill-badge-item">Next.js <span class="skill-level-text">Advanced</span></div>
+                                <div class="skill-badge-item">Git <span class="skill-level-text">Advanced</span></div>
+                                <div class="skill-badge-item">REST APIs <span class="skill-level-text">Advanced</span></div>
+                                <div class="skill-badge-item">GraphQL <span class="skill-level-text">Intermediate</span></div>
+                                <div class="skill-badge-item">Webpack <span class="skill-level-text">Intermediate</span></div>
+                                <div class="skill-badge-item">Testing (Jest) <span class="skill-level-text">Advanced</span></div>
+                                <div class="skill-badge-item">Agile/Scrum <span class="skill-level-text">Advanced</span></div>
+                                <div class="skill-badge-item">UI/UX Design <span class="skill-level-text">Intermediate</span></div>
+                                <div class="skill-badge-item">Responsive Design <span class="skill-level-text">Expert</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About -->
+                    <div class="profile-card">
+                        <h2 class="card-title">About</h2>
+                        <p class="about-text">
+                            Passionate frontend developer with 8 years of experience building scalable web applications. 
+                            Specialized in React.js and modern JavaScript frameworks. Strong focus on creating intuitive 
+                            user experiences and writing clean, maintainable code. Led multiple successful projects from 
+                            concept to deployment, collaborating with cross-functional teams to deliver high-quality products.
+                        </p>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="profile-card">
+                        <h2 class="card-title">Experience</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h3>Senior Frontend Developer</h3>
+                                        <span class="timeline-date">2021 - Present</span>
+                                    </div>
+                                    <p class="timeline-company">TechCorp Inc. • San Francisco, CA</p>
+                                    <ul class="timeline-details">
+                                        <li>Lead a team of 5 developers building enterprise-scale React applications</li>
+                                        <li>Architected and implemented a component library used across 10+ products</li>
+                                        <li>Improved application performance by 40% through code optimization</li>
+                                        <li>Mentored junior developers and conducted code reviews</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h3>Frontend Developer</h3>
+                                        <span class="timeline-date">2018 - 2021</span>
+                                    </div>
+                                    <p class="timeline-company">StartupLabs • Remote</p>
+                                    <ul class="timeline-details">
+                                        <li>Developed responsive web applications using React and Vue.js</li>
+                                        <li>Collaborated with designers to implement pixel-perfect UI components</li>
+                                        <li>Integrated RESTful APIs and managed application state</li>
+                                        <li>Participated in agile development processes and sprint planning</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h3>Junior Frontend Developer</h3>
+                                        <span class="timeline-date">2016 - 2018</span>
+                                    </div>
+                                    <p class="timeline-company">WebSolutions • New York, NY</p>
+                                    <ul class="timeline-details">
+                                        <li>Built responsive websites using HTML, CSS, and JavaScript</li>
+                                        <li>Maintained and updated existing web applications</li>
+                                        <li>Learned modern frontend frameworks and best practices</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="profile-card">
+                        <h2 class="card-title">Education</h2>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div class="education-icon">🎓</div>
+                                <div class="education-content">
+                                    <h3>Bachelor of Science in Computer Science</h3>
+                                    <p class="education-school">University of California, Berkeley</p>
+                                    <p class="education-date">2012 - 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="profile-card">
+                        <h2 class="card-title">Certifications</h2>
+                        <div class="certifications-grid">
+                            <div class="cert-item">
+                                <div class="cert-badge">✓</div>
+                                <div class="cert-content">
+                                    <h4>AWS Certified Developer</h4>
+                                    <p>Amazon Web Services • 2023</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-badge">✓</div>
+                                <div class="cert-content">
+                                    <h4>React Advanced Certification</h4>
+                                    <p>Meta (Facebook) • 2022</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-badge">✓</div>
+                                <div class="cert-content">
+                                    <h4>Professional Scrum Master I</h4>
+                                    <p>Scrum.org • 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="profile-sidebar">
+                    <!-- Profile Stats -->
+                    <div class="profile-card">
+                        <h3 class="card-title">Profile Statistics</h3>
+                        <div class="stats-list">
+                            <div class="stat-item">
+                                <span class="stat-label">Profile Views</span>
+                                <span class="stat-value">1,247</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Applications</span>
+                                <span class="stat-value">23</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Interview Requests</span>
+                                <span class="stat-value">8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="profile-card">
+                        <h3 class="card-title">Languages</h3>
+                        <div class="languages-list">
+                            <div class="language-item">
+                                <span>English</span>
+                                <span class="language-level">Native</span>
+                            </div>
+                            <div class="language-item">
+                                <span>Spanish</span>
+                                <span class="language-level">Fluent</span>
+                            </div>
+                            <div class="language-item">
+                                <span>French</span>
+                                <span class="language-level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="profile-card">
+                        <h3 class="card-title">Availability</h3>
+                        <div class="availability-info">
+                            <p class="availability-status available">Available for opportunities</p>
+                            <p class="availability-detail">Open to: Full-time, Remote</p>
+                            <p class="availability-detail">Expected Salary: $120k - $150k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JobPortal</h3>
+                    <p>Your career journey starts here</p>
+                </div>
+                <div class="footer-section">
+                    <h4>For Candidates</h4>
+                    <ul>
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Career Advice</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JobPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs - JobPortal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/jobs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">JobPortal</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="tutorials.html">Learning</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jobs Header -->
+    <section class="jobs-header">
+        <div class="container">
+            <h1>Browse All Jobs</h1>
+            <p>Explore thousands of opportunities from top companies</p>
+        </div>
+    </section>
+
+    <!-- Jobs Content -->
+    <section class="section">
+        <div class="container">
+            <div class="jobs-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <h3>Filters</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Job Type</h4>
+                        <label><input type="checkbox" checked> Full-time</label>
+                        <label><input type="checkbox"> Part-time</label>
+                        <label><input type="checkbox"> Contract</label>
+                        <label><input type="checkbox"> Internship</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Work Location</h4>
+                        <label><input type="checkbox"> Remote</label>
+                        <label><input type="checkbox"> Hybrid</label>
+                        <label><input type="checkbox"> On-site</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Experience Level</h4>
+                        <label><input type="checkbox"> Entry Level</label>
+                        <label><input type="checkbox"> Mid Level</label>
+                        <label><input type="checkbox"> Senior Level</label>
+                        <label><input type="checkbox"> Lead/Manager</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Salary Range</h4>
+                        <label><input type="checkbox"> $0 - $50k</label>
+                        <label><input type="checkbox"> $50k - $100k</label>
+                        <label><input type="checkbox"> $100k - $150k</label>
+                        <label><input type="checkbox"> $150k+</label>
+                    </div>
+
+                    <button class="btn btn-secondary btn-sm">Clear Filters</button>
+                </aside>
+
+                <!-- Jobs List -->
+                <div class="jobs-main">
+                    <div class="jobs-toolbar">
+                        <p class="results-count">Showing 1-20 of 247 jobs</p>
+                        <select class="sort-select">
+                            <option>Most Recent</option>
+                            <option>Most Relevant</option>
+                            <option>Salary: High to Low</option>
+                            <option>Salary: Low to High</option>
+                        </select>
+                    </div>
+
+                    <div class="jobs-list" id="jobsList">
+                        <!-- Jobs will be dynamically loaded -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn" disabled>Previous</button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn">5</button>
+                        <span>...</span>
+                        <button class="page-btn">13</button>
+                        <button class="page-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JobPortal</h3>
+                    <p>Your career journey starts here</p>
+                </div>
+                <div class="footer-section">
+                    <h4>For Candidates</h4>
+                    <ul>
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Career Advice</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JobPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/jobs.js"></script>
+</body>
+</html>

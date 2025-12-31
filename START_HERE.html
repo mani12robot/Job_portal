@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Analyzer - Start Here</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 600px;
+      width: 100%;
+      padding: 40px;
+      text-align: center;
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 40px;
+    }
+    h1 {
+      color: #1E293B;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #64748B;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 30px 0;
+    }
+    .btn {
+      display: block;
+      padding: 18px 30px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+    .btn-secondary {
+      background: white;
+      color: #667eea;
+      border: 2px solid #667eea;
+    }
+    .btn-secondary:hover {
+      background: #f8f9ff;
+      transform: translateY(-2px);
+    }
+    .features {
+      text-align: left;
+      margin: 30px 0;
+      padding: 20px;
+      background: #f8f9ff;
+      border-radius: 12px;
+    }
+    .features h3 {
+      color: #1E293B;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      padding: 8px 0;
+      color: #475569;
+      display: flex;
+      align-items: center;
+    }
+    .features li:before {
+      content: "✓";
+      color: #10B981;
+      font-weight: bold;
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+    .footer {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #E2E8F0;
+      color: #64748B;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+      .btn {
+        padding: 15px 20px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📄</div>
+    <h1>AI-Powered Resume Analyzer</h1>
+    <p class="subtitle">Get instant ATS compatibility scores and actionable feedback</p>
+    
+    <div class="button-group">
+      <a href="index.html" class="btn btn-primary">
+        🚀 Launch Application
+      </a>
+      <a href="QUICK_START.html" class="btn btn-secondary">
+        📖 Quick Start Guide
+      </a>
+    </div>
+
+    <div class="features">
+      <h3>What's Included:</h3>
+      <ul>
+        <li>Resume upload with drag-and-drop</li>
+        <li>ATS compatibility scoring (0-100)</li>
+        <li>Matched & missing skills analysis</li>
+        <li>Experience & education evaluation</li>
+        <li>Formatting issue detection</li>
+        <li>Actionable improvement tips</li>
+        <li>100% private - no data uploaded</li>
+        <li>Works on all devices</li>
+      </ul>
+    </div>
+
+    <div class="features">
+      <h3>Quick Start:</h3>
+      <ul>
+        <li>Upload your resume (PDF or DOCX)</li>
+        <li>Paste the job description</li>
+        <li>Click "Analyze Resume"</li>
+        <li>Get instant results!</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p><strong>Package Contents:</strong></p>
+      <p style="margin-top: 10px; font-size: 0.85rem;">
+        index.html • style.css • app.js<br>
+        README.md • QUICK_START.html • PROJECT_SUMMARY.txt
+      </p>
+      <p style="margin-top: 20px;">
+        © 2025 AI-Powered Resume Analyzer
+      </p>
+    </div>
+  </div>
+</body>
+</html>

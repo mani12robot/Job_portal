@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Center - JobPortal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tutorials.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">JobPortal</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="inbox.html">Inbox</a></li>
+                    <li><a href="tutorials.html" class="active">Learning</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Learning Header -->
+    <section class="learning-header">
+        <div class="container">
+            <h1>Learning Center</h1>
+            <p>Upskill with courses and practice with mock interviews</p>
+        </div>
+    </section>
+
+    <!-- Learning Tabs -->
+    <section class="section">
+        <div class="container">
+            <div class="learning-tabs">
+                <button class="tab-btn active" data-tab="courses">Courses</button>
+                <button class="tab-btn" data-tab="interviews">Mock Interviews</button>
+            </div>
+
+            <!-- Courses Tab -->
+            <div class="tab-content active" id="courses">
+                <!-- Filters -->
+                <div class="filters-bar">
+                    <select class="filter-select">
+                        <option>All Skills</option>
+                        <option>Frontend Development</option>
+                        <option>Backend Development</option>
+                        <option>System Design</option>
+                        <option>Algorithms</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>All Levels</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                    <select class="filter-select">
+                        <option>Sort by: Latest</option>
+                        <option>Sort by: Popular</option>
+                        <option>Sort by: Duration</option>
+                    </select>
+                </div>
+
+                <!-- In Progress -->
+                <div class="learning-section">
+                    <h2 class="section-subtitle">In Progress</h2>
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=350&h=200&fit=crop" alt="Advanced React Patterns">
+                                <div class="course-badge in-progress">In Progress</div>
+                            </div>
+                            <div class="course-content">
+                                <h3>Advanced React Patterns</h3>
+                                <p class="course-instructor">by Sarah Johnson</p>
+                                <p class="course-description">Master complex React patterns including render props, compound components, and hooks.</p>
+                                <div class="course-meta">
+                                    <span>⏱️ 8 hours</span>
+                                    <span>📚 24 lessons</span>
+                                    <span class="difficulty intermediate">Intermediate</span>
+                                </div>
+                                <div class="course-progress-bar">
+                                    <div class="course-progress-fill" style="width: 65%"></div>
+                                </div>
+                                <p class="progress-text">65% complete</p>
+                                <button class="btn btn-secondary">Continue Learning</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=350&h=200&fit=crop" alt="System Design">
+                                <div class="course-badge in-progress">In Progress</div>
+                            </div>
+                            <div class="course-content">
+                                <h3>System Design Fundamentals</h3>
+                                <p class="course-instructor">by David Lee</p>
+                                <p class="course-description">Learn to design scalable distributed systems and ace system design interviews.</p>
+                                <div class="course-meta">
+                                    <span>⏱️ 12 hours</span>
+                                    <span>📚 36 lessons</span>
+                                    <span class="difficulty advanced">Advanced</span>
+                                </div>
+                                <div class="course-progress-bar">
+                                    <div class="course-progress-fill" style="width: 40%"></div>
+                                </div>
+                                <p class="progress-text">40% complete</p>
+                                <button class="btn btn-secondary">Continue Learning</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=350&h=200&fit=crop" alt="TypeScript">
+                                <div class="course-badge in-progress">In Progress</div>
+                            </div>
+                            <div class="course-content">
+                                <h3>TypeScript Deep Dive</h3>
+                                <p class="course-instructor">by Michael Chen</p>
+                                <p class="course-description">Advanced TypeScript techniques for building type-safe applications.</p>
+                                <div class="course-meta">
+                                    <span>⏱️ 6 hours</span>
+                                    <span>📚 18 lessons</span>
+                                    <span class="difficulty intermediate">Intermediate</span>
+                                </div>
+                                <div class="course-progress-bar">
+                                    <div class="course-progress-fill" style="width: 85%"></div>
+                                </div>
+                                <p class="progress-text">85% complete</p>
+                                <button class="btn btn-secondary">Continue Learning</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommended -->
+                <div class="learning-section">
+                    <h2 class="section-subtitle">Recommended for You</h2>
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=350&h=200&fit=crop" alt="JavaScript Algorithms">
+                                <div class="course-badge new">New</div>
+                            </div>
+                            <div class="course-content">
+                                <h3>JavaScript Algorithms & Data Structures</h3>
+                                <p class="course-instructor">by Emily Parker</p>
+                                <p class="course-description">Master essential algorithms and data structures for coding interviews.</p>
+                                <div class="course-meta">
+                                    <span>⏱️ 15 hours</span>
+                                    <span>📚 45 lessons</span>
+                                    <span class="difficulty intermediate">Intermediate</span>
+                                </div>
+                                <div class="course-rating">
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    <span>(2,456 reviews)</span>
+                                </div>
+                                <button class="btn btn-accent">Start Course</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=350&h=200&fit=crop" alt="Web Performance">
+                                <div class="course-badge">Featured</div>
+                            </div>
+                            <div class="course-content">
+                                <h3>Web Performance Optimization</h3>
+                                <p class="course-instructor">by Alex Thompson</p>
+                                <p class="course-description">Learn techniques to make your websites lightning fast and performant.</p>
+                                <div class="course-meta">
+                                    <span>⏱️ 5 hours</span>
+                                    <span>📚 15 lessons</span>
+                                    <span class="difficulty intermediate">Intermediate</span>
+                                </div>
+                                <div class="course-rating">
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    <span>(1,823 reviews)</span>
+                                </div>
+                                <button class="btn btn-accent">Start Course</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=350&h=200&fit=crop" alt="GraphQL">
+                                <div class="course-badge">Popular</div>
+                            </div>
+                            <div class="course-content">
+                                <h3>GraphQL Complete Guide</h3>
+                                <p class="course-instructor">by Rachel Green</p>
+                                <p class="course-description">Build modern APIs with GraphQL from basics to advanced concepts.</p>
+                                <div class="course-meta">
+                                    <span>⏱️ 10 hours</span>
+                                    <span>📚 30 lessons</span>
+                                    <span class="difficulty advanced">Advanced</span>
+                                </div>
+                                <div class="course-rating">
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    <span>(1,234 reviews)</span>
+                                </div>
+                                <button class="btn btn-accent">Start Course</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=350&h=200&fit=crop" alt="Testing">
+                                <div class="course-badge">Trending</div>
+                            </div>
+                            <div class="course-content">
+                                <h3>Testing Best Practices</h3>
+                                <p class="course-instructor">by James Wilson</p>
+                                <p class="course-description">Write effective tests using Jest, React Testing Library, and Cypress.</p>
+                                <div class="course-meta">
+                                    <span>⏱️ 7 hours</span>
+                                    <span>📚 21 lessons</span>
+                                    <span class="difficulty intermediate">Intermediate</span>
+                                </div>
+                                <div class="course-rating">
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    <span>(987 reviews)</span>
+                                </div>
+                                <button class="btn btn-accent">Start Course</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=350&h=200&fit=crop" alt="Next.js">
+                                <div class="course-badge new">New</div>
+                            </div>
+                            <div class="course-content">
+                                <h3>Next.js 14 Masterclass</h3>
+                                <p class="course-instructor">by Tom Anderson</p>
+                                <p class="course-description">Build full-stack applications with the latest Next.js features.</p>
+                                <div class="course-meta">
+                                    <span>⏱️ 11 hours</span>
+                                    <span>📚 33 lessons</span>
+                                    <span class="difficulty advanced">Advanced</span>
+                                </div>
+                                <div class="course-rating">
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    <span>(756 reviews)</span>
+                                </div>
+                                <button class="btn btn-accent">Start Course</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?w=350&h=200&fit=crop" alt="CSS">
+                                <div class="course-badge">Bestseller</div>
+                            </div>
+                            <div class="course-content">
+                                <h3>Modern CSS Mastery</h3>
+                                <p class="course-instructor">by Lisa Martinez</p>
+                                <p class="course-description">Master CSS Grid, Flexbox, animations, and modern layout techniques.</p>
+                                <div class="course-meta">
+                                    <span>⏱️ 6 hours</span>
+                                    <span>📚 18 lessons</span>
+                                    <span class="difficulty beginner">Beginner</span>
+                                </div>
+                                <div class="course-rating">
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                    <span>(1,567 reviews)</span>
+                                </div>
+                                <button class="btn btn-accent">Start Course</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mock Interviews Tab -->
+            <div class="tab-content" id="interviews">
+                <!-- Upcoming Interviews -->
+                <div class="learning-section">
+                    <h2 class="section-subtitle">Upcoming Interviews</h2>
+                    <div class="interviews-list">
+                        <div class="interview-card upcoming">
+                            <div class="interview-icon">📅</div>
+                            <div class="interview-info">
+                                <h3>Frontend Technical Interview</h3>
+                                <p class="interview-type">React & JavaScript Focus</p>
+                                <div class="interview-meta">
+                                    <span>📆 Dec 28, 2024</span>
+                                    <span>⏰ 2:00 PM - 3:30 PM</span>
+                                    <span class="difficulty intermediate">Intermediate</span>
+                                </div>
+                                <p class="interview-description">Practice coding challenges and system design questions focused on frontend development.</p>
+                            </div>
+                            <div class="interview-actions">
+                                <button class="btn btn-secondary">Reschedule</button>
+                                <button class="btn btn-accent">Join Interview</button>
+                            </div>
+                        </div>
+
+                        <div class="interview-card upcoming">
+                            <div class="interview-icon">📅</div>
+                            <div class="interview-info">
+                                <h3>Behavioral Interview Practice</h3>
+                                <p class="interview-type">Communication & Leadership</p>
+                                <div class="interview-meta">
+                                    <span>📆 Jan 5, 2025</span>
+                                    <span>⏰ 10:00 AM - 11:00 AM</span>
+                                    <span class="difficulty beginner">All Levels</span>
+                                </div>
+                                <p class="interview-description">Practice answering common behavioral questions and get feedback on your responses.</p>
+                            </div>
+                            <div class="interview-actions">
+                                <button class="btn btn-secondary">Reschedule</button>
+                                <button class="btn btn-accent">Join Interview</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Completed Interviews -->
+                <div class="learning-section">
+                    <h2 class="section-subtitle">Completed Interviews</h2>
+                    <div class="interviews-list">
+                        <div class="interview-card completed">
+                            <div class="interview-icon">✓</div>
+                            <div class="interview-info">
+                                <h3>System Design Interview</h3>
+                                <p class="interview-type">Scalable Architecture</p>
+                                <div class="interview-meta">
+                                    <span>📆 Dec 15, 2024</span>
+                                    <span>⏰ Completed</span>
+                                    <span class="score">Score: 4.5/5</span>
+                                </div>
+                                <div class="performance-bars">
+                                    <div class="perf-item">
+                                        <span>Problem Solving</span>
+                                        <div class="perf-bar"><div style="width: 90%"></div></div>
+                                    </div>
+                                    <div class="perf-item">
+                                        <span>Communication</span>
+                                        <div class="perf-bar"><div style="width: 85%"></div></div>
+                                    </div>
+                                    <div class="perf-item">
+                                        <span>Technical Knowledge</span>
+                                        <div class="perf-bar"><div style="width: 88%"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="interview-actions">
+                                <button class="btn btn-outline">View Feedback</button>
+                            </div>
+                        </div>
+
+                        <div class="interview-card completed">
+                            <div class="interview-icon">✓</div>
+                            <div class="interview-info">
+                                <h3>Coding Challenge</h3>
+                                <p class="interview-type">Algorithms & Data Structures</p>
+                                <div class="interview-meta">
+                                    <span>📆 Dec 10, 2024</span>
+                                    <span>⏰ Completed</span>
+                                    <span class="score">Score: 4.2/5</span>
+                                </div>
+                                <div class="performance-bars">
+                                    <div class="perf-item">
+                                        <span>Code Quality</span>
+                                        <div class="perf-bar"><div style="width: 85%"></div></div>
+                                    </div>
+                                    <div class="perf-item">
+                                        <span>Efficiency</span>
+                                        <div class="perf-bar"><div style="width: 80%"></div></div>
+                                    </div>
+                                    <div class="perf-item">
+                                        <span>Problem Approach</span>
+                                        <div class="perf-bar"><div style="width: 88%"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="interview-actions">
+                                <button class="btn btn-outline">View Feedback</button>
+                            </div>
+                        </div>
+
+                        <div class="interview-card completed">
+                            <div class="interview-icon">✓</div>
+                            <div class="interview-info">
+                                <h3>React Component Design</h3>
+                                <p class="interview-type">Frontend Architecture</p>
+                                <div class="interview-meta">
+                                    <span>📆 Dec 3, 2024</span>
+                                    <span>⏰ Completed</span>
+                                    <span class="score">Score: 4.7/5</span>
+                                </div>
+                                <div class="performance-bars">
+                                    <div class="perf-item">
+                                        <span>Component Design</span>
+                                        <div class="perf-bar"><div style="width: 95%"></div></div>
+                                    </div>
+                                    <div class="perf-item">
+                                        <span>Best Practices</span>
+                                        <div class="perf-bar"><div style="width: 92%"></div></div>
+                                    </div>
+                                    <div class="perf-item">
+                                        <span>Code Organization</span>
+                                        <div class="perf-bar"><div style="width: 90%"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="interview-actions">
+                                <button class="btn btn-outline">View Feedback</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schedule New -->
+                <div class="learning-section">
+                    <h2 class="section-subtitle">Schedule New Interview</h2>
+                    <div class="schedule-grid">
+                        <div class="schedule-card">
+                            <h3>Technical Interview</h3>
+                            <p>Coding challenges and problem-solving</p>
+                            <ul class="schedule-features">
+                                <li>90 minutes duration</li>
+                                <li>Real-time feedback</li>
+                                <li>Multiple difficulty levels</li>
+                            </ul>
+                            <button class="btn btn-accent">Schedule Now</button>
+                        </div>
+
+                        <div class="schedule-card">
+                            <h3>System Design</h3>
+                            <p>Architecture and scalability discussion</p>
+                            <ul class="schedule-features">
+                                <li>60 minutes duration</li>
+                                <li>Whiteboard practice</li>
+                                <li>Expert reviewers</li>
+                            </ul>
+                            <button class="btn btn-accent">Schedule Now</button>
+                        </div>
+
+                        <div class="schedule-card">
+                            <h3>Behavioral Interview</h3>
+                            <p>Communication and soft skills</p>
+                            <ul class="schedule-features">
+                                <li>45 minutes duration</li>
+                                <li>STAR method practice</li>
+                                <li>Personalized feedback</li>
+                            </ul>
+                            <button class="btn btn-accent">Schedule Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JobPortal</h3>
+                    <p>Your career journey starts here</p>
+                </div>
+                <div class="footer-section">
+                    <h4>For Candidates</h4>
+                    <ul>
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Career Advice</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JobPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/tutorials.js"></script>
+</body>
+</html>

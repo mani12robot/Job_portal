@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox - JobPortal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/inbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">JobPortal</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="inbox.html" class="active">Inbox</a></li>
+                    <li><a href="tutorials.html">Learning</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inbox Container -->
+    <section class="inbox-section">
+        <div class="inbox-container">
+            <!-- Conversations List -->
+            <div class="conversations-panel" id="conversationsPanel">
+                <div class="conversations-header">
+                    <h2>Messages</h2>
+                    <button class="btn btn-accent btn-sm" id="composeBtn">+ New</button>
+                </div>
+                
+                <div class="search-box-inbox">
+                    <input type="text" placeholder="Search messages..." class="search-input-inbox">
+                </div>
+
+                <div class="conversations-list" id="conversationsList">
+                    <div class="conversation-item active" data-conversation="1">
+                        <div class="conversation-avatar">TC</div>
+                        <div class="conversation-content">
+                            <div class="conversation-header">
+                                <h4>TechCorp Inc.</h4>
+                                <span class="conversation-time">10:30 AM</span>
+                            </div>
+                            <p class="conversation-preview">We'd like to schedule an interview...</p>
+                            <span class="unread-badge">2</span>
+                        </div>
+                    </div>
+
+                    <div class="conversation-item" data-conversation="2">
+                        <div class="conversation-avatar">DH</div>
+                        <div class="conversation-content">
+                            <div class="conversation-header">
+                                <h4>DesignHub</h4>
+                                <span class="conversation-time">Yesterday</span>
+                            </div>
+                            <p class="conversation-preview">Thank you for your application. We...</p>
+                        </div>
+                    </div>
+
+                    <div class="conversation-item" data-conversation="3">
+                        <div class="conversation-avatar">SL</div>
+                        <div class="conversation-content">
+                            <div class="conversation-header">
+                                <h4>StartupLabs</h4>
+                                <span class="conversation-time">2 days ago</span>
+                            </div>
+                            <p class="conversation-preview">Your profile looks impressive! Are you...</p>
+                        </div>
+                    </div>
+
+                    <div class="conversation-item" data-conversation="4">
+                        <div class="conversation-avatar">CS</div>
+                        <div class="conversation-content">
+                            <div class="conversation-header">
+                                <h4>CloudSystems</h4>
+                                <span class="conversation-time">Dec 20</span>
+                            </div>
+                            <p class="conversation-preview">We have reviewed your resume and...</p>
+                        </div>
+                    </div>
+
+                    <div class="conversation-item" data-conversation="5">
+                        <div class="conversation-avatar">IL</div>
+                        <div class="conversation-content">
+                            <div class="conversation-header">
+                                <h4>InnovateLabs</h4>
+                                <span class="conversation-time">Dec 18</span>
+                            </div>
+                            <p class="conversation-preview">Congratulations! We'd like to extend...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages Thread -->
+            <div class="messages-panel" id="messagesPanel">
+                <div class="messages-header">
+                    <button class="back-btn" id="backBtn">←</button>
+                    <div class="conversation-avatar">TC</div>
+                    <div class="thread-info">
+                        <h3>TechCorp Inc.</h3>
+                        <p class="thread-status">Online</p>
+                    </div>
+                </div>
+
+                <div class="messages-container" id="messagesContainer">
+                    <div class="message-group">
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>Hello Alexandra! We came across your profile and are impressed with your frontend development experience.</p>
+                            </div>
+                            <span class="message-time">Dec 22, 9:15 AM</span>
+                        </div>
+
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>We have an opening for a Senior Frontend Developer position that we think would be a great fit for you. Would you be interested in learning more?</p>
+                            </div>
+                            <span class="message-time">Dec 22, 9:16 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="message-group sent">
+                        <div class="message sent">
+                            <div class="message-content">
+                                <p>Hi! Thank you for reaching out. Yes, I'd definitely be interested in learning more about the position.</p>
+                            </div>
+                            <span class="message-time">Dec 22, 9:45 AM</span>
+                        </div>
+
+                        <div class="message sent">
+                            <div class="message-content">
+                                <p>Could you share more details about the role and the team I'd be working with?</p>
+                            </div>
+                            <span class="message-time">Dec 22, 9:46 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="message-group">
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>The position is for our Core Product team. You'd be working on our main web application used by over 5 million users.</p>
+                            </div>
+                            <span class="message-time">Dec 22, 10:15 AM</span>
+                        </div>
+
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>The role involves architecting new features, mentoring junior developers, and working closely with our design and product teams. The tech stack includes React, TypeScript, and Node.js.</p>
+                            </div>
+                            <span class="message-time">Dec 22, 10:16 AM</span>
+                        </div>
+
+                        <div class="message received">
+                            <div class="message-content">
+                                <p>We'd like to schedule an interview next week if you're available. What does your schedule look like?</p>
+                            </div>
+                            <span class="message-time">Dec 22, 10:30 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="date-divider">
+                        <span>Today</span>
+                    </div>
+
+                    <div class="typing-indicator">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="message-input-container">
+                    <button class="attachment-btn" title="Attach file">📎</button>
+                    <input type="text" placeholder="Type your message..." class="message-input" id="messageInput">
+                    <button class="send-btn" id="sendBtn">Send</button>
+                </div>
+            </div>
+
+            <!-- Empty State (shown when no conversation selected on desktop) -->
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">💬</div>
+                <h3>Select a conversation</h3>
+                <p>Choose a message from the list to start chatting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JobPortal</h3>
+                    <p>Your career journey starts here</p>
+                </div>
+                <div class="footer-section">
+                    <h4>For Candidates</h4>
+                    <ul>
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Career Advice</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JobPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/inbox.js"></script>
+</body>
+</html>

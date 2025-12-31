@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobPortal - Find Your Dream Job</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <div class="nav-content">
+            <div class="logo">
+    <img src="Screenshot 2025-12-28 171808.png" alt="JobPortal Logo">
+   </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+                <li><a href="tutorials.html">Learning</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Find Your Dream Job Today</h1>
+            <p>Connect with top employers and unlock new career opportunities</p>
+
+            <div class="search-box">
+                <div class="search-input-group">
+                    <input type="text" placeholder="Job title, keywords, or company" class="search-input">
+                    <input type="text" placeholder="Location" class="search-input location">
+
+                    <!-- ✅ ADDED FILTER -->
+                    <select id="jobTypeFilter" class="search-input">
+                        <option value="">Job Type</option>
+                        <option value="Remote">Remote</option>
+                        <option value="Hybrid">Hybrid</option>
+                        <option value="On-site">On-site</option>
+                    </select>
+
+                    <button class="btn btn-primary" id="searchBtn">Search Jobs</button>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <button class="btn btn-accent" id="uploadResumeBtn">Build Resume</button>
+                <button class="btn btn-accent">Explore Jobs</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Categories -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Browse by Category</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-icon">💻</div>
+                <h3>Technology</h3>
+                <p>2,547 jobs</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🎨</div>
+                <h3>Design</h3>
+                <p>1,234 jobs</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">📊</div>
+                <h3>Marketing</h3>
+                <p>987 jobs</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">💼</div>
+                <h3>Business</h3>
+                <p>1,876 jobs</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🔬</div>
+                <h3>Science</h3>
+                <p>654 jobs</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">⚖️</div>
+                <h3>Legal</h3>
+                <p>432 jobs</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Recent Jobs -->
+<section class="section section-gray">
+    <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h2 class="section-title" style="margin: 0;">Recently Posted Jobs</h2>
+            <a href="jobs.html" class="btn btn-outline btn-sm">View All</a>
+        </div>
+
+        <div class="jobs-grid">
+
+            <div class="job-card" data-job-type="Remote">
+                <div class="job-header">
+                    <div class="company-logo">T</div>
+                    <div class="job-info">
+                        <h3>Senior Frontend Developer</h3>
+                        <p class="company-name">TechCorp Inc.</p>
+                    </div>
+                    <button class="bookmark-btn">⭐</button>
+                </div>
+                <div class="job-details">
+                    <span class="badge">Full-time</span>
+                    <span class="badge">Remote</span>
+                </div>
+                <div class="job-meta">
+                    <span>📍 San Francisco, CA</span>
+                    <span>💰 $120k - $150k</span>
+                </div>
+                <p class="job-description">We're looking for an experienced frontend developer to join our growing team...</p>
+                <button class="btn btn-secondary btn-sm">Apply Now</button>
+            </div>
+
+            <div class="job-card" data-job-type="Hybrid">
+                <div class="job-header">
+                    <div class="company-logo">D</div>
+                    <div class="job-info">
+                        <h3>UX Designer</h3>
+                        <p class="company-name">DesignHub</p>
+                    </div>
+                    <button class="bookmark-btn">⭐</button>
+                </div>
+                <div class="job-details">
+                    <span class="badge">Full-time</span>
+                    <span class="badge">Hybrid</span>
+                </div>
+                <div class="job-meta">
+                    <span>📍 New York, NY</span>
+                    <span>💰 $90k - $120k</span>
+                </div>
+                <p class="job-description">Join our creative team to design beautiful and intuitive user experiences...</p>
+                <button class="btn btn-secondary btn-sm">Apply Now</button>
+            </div>
+
+            <div class="job-card" data-job-type="On-site">
+                <div class="job-header">
+                    <div class="company-logo">M</div>
+                    <div class="job-info">
+                        <h3>Marketing Manager</h3>
+                        <p class="company-name">MarketPro</p>
+                    </div>
+                    <button class="bookmark-btn">⭐</button>
+                </div>
+                <div class="job-details">
+                    <span class="badge">Full-time</span>
+                    <span class="badge">On-site</span>
+                </div>
+                <div class="job-meta">
+                    <span>📍 Austin, TX</span>
+                    <span>💰 $80k - $100k</span>
+                </div>
+                <p class="job-description">Lead our marketing initiatives and drive growth for our expanding business...</p>
+                <button class="btn btn-secondary btn-sm">Apply Now</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Companies -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Hiring Companies</h2>
+        <div class="companies-carousel-container">
+            <button class="carousel-btn prev" id="companiesPrev">‹</button>
+            <div class="companies-slider" id="companiesSlider">
+                <div class="company-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"></div>
+                <div class="company-item"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"></div>
+                <div class="company-item"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"></div>
+                <div class="company-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"></div>
+                <div class="company-item"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></div>
+                <div class="company-item"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"></div>
+            </div>
+            <button class="carousel-btn next" id="companiesNext">›</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2025 JobPortal. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+
+<!-- ✅ FILTER LOGIC -->
+<script>
+document.getElementById("searchBtn").addEventListener("click", function () {
+    const selectedType = document.getElementById("jobTypeFilter").value;
+    const jobs = document.querySelectorAll(".job-card");
+
+    jobs.forEach(job => {
+        const type = job.getAttribute("data-job-type");
+        job.style.display = (selectedType === "" || type === selectedType) ? "" : "none";
+    });
+});
+</script>
+
+<input type="file" id="resumeFileInput" accept=".pdf,.doc,.docx" style="display: none;">
+</body>
+</html>
